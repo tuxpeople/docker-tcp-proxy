@@ -20,6 +20,10 @@
   color: "72ccf3"
   description: >-
     Changes made in the terraform directory
+- name: area/container
+  color: "72ccf3"
+  description: >-
+    Changes made in the Dockerfile
 # Renovate
 - name: renovate/ansible
   color: "ffc300"
