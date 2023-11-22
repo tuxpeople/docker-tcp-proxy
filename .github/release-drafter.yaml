@@ -17,7 +17,7 @@ categories:
   - title: "Maintenance"
     labels: ["docs"]
   - title: "Docker"
-    labels:
+    labels: ["area/container"]
 version-resolver:
   major:
     labels: ["type/break"]
