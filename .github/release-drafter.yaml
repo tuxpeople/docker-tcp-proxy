@@ -16,7 +16,7 @@ categories:
     labels: ["area/terraform"]
   - title: "Maintenance"
     labels: ["docs"]
-  - title: "Docker"
+  - title: "Container"
     labels: ["area/container"]
 version-resolver:
   major:
