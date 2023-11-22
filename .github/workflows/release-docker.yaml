@@ -50,16 +50,7 @@ jobs:
           IMAGENAME=$(echo ${{ github.repository }} | sed 's/${{ github.repository_owner }}\/docker-//g')
           IMAGEPREFIX="ghcr.io/${{ github.repository_owner }}"
           IMAGE="${IMAGEPREFIX}/${IMAGENAME}"
-          if [ "${{ github.event_name }}" = "release" ]; then
-            VERSION=nightly
-          elif [[ $GITHUB_REF == refs/tags/* ]]; then
-            VERSION=${GITHUB_REF#refs/tags/}
-          elif [[ $GITHUB_REF == refs/heads/* ]]; then
-            VERSION=$(echo ${GITHUB_REF#refs/heads/} | sed -r 's#/+#-#g')
-            if [ "${{ github.event.repository.default_branch }}" = "$VERSION" ]; then
-              VERSION=devel
-            fi
-          elif [ "${{ github.event_name }}" = "schedule" ]; then
+          if [ "${{ github.event_name }}" = "schedule" ]; then
             VERSION=nightly
           elif [[ $GITHUB_REF == refs/tags/* ]]; then
             VERSION=${GITHUB_REF#refs/tags/}
