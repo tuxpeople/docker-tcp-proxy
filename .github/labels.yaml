@@ -61,3 +61,5 @@
   color: "cc317c"
 - name: community
   color: "0e8a16"
+- name: triage
+  color: "84b6eb"
