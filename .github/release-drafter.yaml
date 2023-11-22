@@ -7,17 +7,17 @@ categories:
   - title: "Community Contributions"
     labels: ["community"]
   - title: "Kubernetes"
-    labels: ["area/kubernetes"]
+    labels: ["area/kubernetes", "renovate/helm"]
   - title: "Github"
-    labels: ["area/github"]
+    labels: ["area/github", "renovate/github-action", "renovate/github-release"]
   - title: "Ansible"
-    labels: ["area/ansible"]
+    labels: ["area/ansible", "renovate/ansible"]
   - title: "Terraform"
-    labels: ["area/terraform"]
+    labels: ["area/terraform", "renovate/terraform"]
   - title: "Maintenance"
     labels: ["docs"]
   - title: "Container"
-    labels: ["area/container"]
+    labels: ["area/container", "renovate/container"]
 version-resolver:
   major:
     labels: ["type/break"]
