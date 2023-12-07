@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-HOST="${TARGET_HOST:-$1}"
-PORT="${TARGET_PORT:-$2}"
-LISTEN_PORT="${LISTEN_PORT:-$PORT}"
+HOST=${TARGET_HOST:-$1}
+PORT=${TARGET_PORT:-$2}
+LISTEN_PORT=${LISTEN_PORT:-$PORT}
 
 if [ -n ${HOST} ]; then
     echo "Missing environment variables or command line options: target host"
