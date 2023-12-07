@@ -4,15 +4,15 @@ HOST=${TARGET_HOST:-$1}
 PORT=${TARGET_PORT:-$2}
 LISTEN_PORT=${LISTEN_PORT:-$PORT}
 
-if [ -n ${HOST} ]; then
+if [ -z ${HOST} ]; then
     echo "Missing environment variables or command line options: target host"
     exit 1
 fi
-if [ -n ${PORT} ]; then
+if [ -z ${PORT} ]; then
     echo "Missing environment variables or command line options: target port"
     exit 1
 fi
-if [ -n ${LISTEN_PORT} ]; then
+if [ -z ${LISTEN_PORT} ]; then
     echo "Missing environment variables or command line options: listen port"
     exit 1
 fi
